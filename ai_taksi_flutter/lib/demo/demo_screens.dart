@@ -106,10 +106,10 @@ class _RiderSchedulePageState extends ConsumerState<RiderSchedulePage> {
       ListTile(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)), tileColor: canvas,
         leading: const Icon(Icons.schedule, color: teal), title: Text(arrival.format(context)), subtitle: const Text('NamSUga yetib borish'), trailing: const Icon(Icons.chevron_right),
         onTap: () async { final time = await showTimePicker(context: context, initialTime: arrival); if (time != null) setState(() => arrival = time); }),
-      const SizedBox(height: 17), DropdownButtonFormField<String>(value: pickup, isExpanded: true,
+      const SizedBox(height: 17), DropdownButtonFormField<String>(initialValue: pickup, isExpanded: true,
         decoration: const InputDecoration(labelText: 'Chiqish bekati', prefixIcon: Icon(Icons.location_on_outlined)),
         items: pilotStops.map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(), onChanged: (v) { if (v != null) setState(() => pickup = v); }),
-      const SizedBox(height: 15), DropdownButtonFormField<String>(value: direction, isExpanded: true,
+      const SizedBox(height: 15), DropdownButtonFormField<String>(initialValue: direction, isExpanded: true,
         decoration: const InputDecoration(labelText: 'Yo‘nalish', prefixIcon: Icon(Icons.swap_horiz_rounded)),
         items: const [DropdownMenuItem(value: 'Kosonsoy → NamSU', child: Text('Kosonsoy → NamSU')), DropdownMenuItem(value: 'NamSU → Kosonsoy', child: Text('NamSU → Kosonsoy'))], onChanged: (v) { if (v != null) setState(() => direction = v); }),
       const SizedBox(height: 22), SizedBox(width: double.infinity, child: FilledButton.icon(

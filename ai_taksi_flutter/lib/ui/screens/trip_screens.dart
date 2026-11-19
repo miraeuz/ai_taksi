@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../core/chat_policy.dart';
 import '../../models/models.dart';
-import '../../state/providers.dart';
 import '../widgets/common.dart';
 
 class TripOfferScreen extends ConsumerStatefulWidget {
