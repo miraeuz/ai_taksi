@@ -60,6 +60,10 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Migrate (alembic upgrade head)
         run: $GITHUB_WORKSPACE/.github/ci/run.sh alembic alembic upgrade head
+      - name: Migration downgrade to base and upgrade again
+        run: |
+          $GITHUB_WORKSPACE/.github/ci/run.sh downgrade alembic downgrade base
+          $GITHUB_WORKSPACE/.github/ci/run.sh re-upgrade alembic upgrade head
       - name: Seed demo data
         run: $GITHUB_WORKSPACE/.github/ci/run.sh seed python -m scripts.seed
       - name: Seed is idempotent (second run)

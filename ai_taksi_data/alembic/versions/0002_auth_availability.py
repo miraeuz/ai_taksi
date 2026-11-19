@@ -11,6 +11,6 @@ branch_labels = None
 depends_on = None
 NAMES = ['otp_challenges', 'refresh_sessions', 'driver_availability']
 def upgrade():
-    Base.metadata.create_all(bind=op.get_bind(), tables=[Base.metadata.tables[n] for n in NAMES], checkfirst=False)
+    Base.metadata.create_all(bind=op.get_bind(), tables=[Base.metadata.tables[n] for n in NAMES], checkfirst=True)
 def downgrade():
-    Base.metadata.drop_all(bind=op.get_bind(), tables=[Base.metadata.tables[n] for n in reversed(NAMES)], checkfirst=False)
+    op.execute('DROP TABLE IF EXISTS ' + ', '.join(reversed(NAMES)) + ' CASCADE')
