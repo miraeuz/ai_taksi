@@ -25,7 +25,8 @@ jobs:
           cache-dependency-path: ai_taksi_data/requirements.txt
       - run: pip install -r requirements.txt
       - run: python -m compileall -q app scripts tests alembic
-      - run: python -m pytest -q
+      - name: pytest
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh pytest python -m pytest -q
 
   backend-postgres:
     name: Backend on PostgreSQL 16 + PostGIS 3.4
@@ -58,11 +59,11 @@ jobs:
           cache-dependency-path: ai_taksi_data/requirements.txt
       - run: pip install -r requirements.txt
       - name: Migrate (alembic upgrade head)
-        run: alembic upgrade head
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh alembic alembic upgrade head
       - name: Seed demo data
-        run: python -m scripts.seed
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh seed python -m scripts.seed
       - name: Seed is idempotent (second run)
-        run: python -m scripts.seed
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh seed-again python -m scripts.seed
       - name: Models match migrations (informational)
         continue-on-error: true
         run: alembic check
@@ -99,11 +100,14 @@ jobs:
           cp /tmp/manifests/main.xml android/app/src/main/AndroidManifest.xml
           cp /tmp/manifests/debug.xml android/app/src/debug/AndroidManifest.xml
           rm -f test/widget_test.dart
-      - run: flutter pub get
-      - run: flutter analyze
-      - run: flutter test
+      - name: flutter pub get
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh pub-get flutter pub get
+      - name: flutter analyze
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh flutter-analyze flutter analyze
+      - name: flutter test
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh flutter-test flutter test
       - name: Build debug APK
-        run: flutter build apk --debug --dart-define=API_BASE_URL=http://10.0.2.2:8000
+        run: $GITHUB_WORKSPACE/.github/ci/run.sh flutter-build flutter build apk --debug --dart-define=API_BASE_URL=http://10.0.2.2:8000
       - uses: actions/upload-artifact@v4
         with:
           name: ai-taksi-debug-apk
