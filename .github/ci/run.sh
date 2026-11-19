@@ -6,7 +6,7 @@ log="$(mktemp)"
 "$@" 2>&1 | tee "$log"
 code=${PIPESTATUS[0]}
 if [ "$code" -ne 0 ]; then
-  msg=$(tail -n 70 "$log" | cut -c1-400 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
+  msg=$(tail -n 160 "$log" | cut -c1-260 | sed 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
   echo "::error title=${label} failed::${msg}"
 fi
 exit "$code"
