@@ -73,7 +73,7 @@ class ApiClient {
 class ApiRepository {
   final ApiClient client;
   ApiRepository(this.client);
-  Future<void> requestOtp(String phone, String purpose) => client.call(() => client.dio.post('/auth/request-otp', data: {'phone': phone, 'purpose': purpose}), (_) {});
+  Future<void> requestOtp(String phone, String purpose) => client.call(() => client.dio.post('/auth/request-otp', data: {'phone': phone, 'purpose': purpose}), (_) => null);
   Future<AuthTokens> verifyOtp(String phone, String code, String purpose, String name) async {
     final pair = await client.call(() => client.dio.post('/auth/verify-otp', data: {'phone': phone, 'code': code, 'purpose': purpose, if (purpose == 'signup') 'name': name}), (j) => AuthTokens.fromJson(jsonMap(j)));
     await client.saveTokens(pair);
@@ -87,12 +87,12 @@ class ApiRepository {
   }
   Future<List<Schedule>> schedules() => client.call(() => client.dio.get('/rider/schedules'), (j) => jsonList(j).map(Schedule.fromJson).toList());
   Future<Schedule> createSchedule(Map<String, dynamic> data) => client.call(() => client.dio.post('/rider/schedules', data: data), (j) => Schedule.fromJson(jsonMap(j)));
-  Future<void> deleteSchedule(int id) => client.call(() => client.dio.delete('/rider/schedules/$id'), (_) {});
+  Future<void> deleteSchedule(int id) => client.call(() => client.dio.delete('/rider/schedules/$id'), (_) => null);
   Future<List<Confirmation>> confirmations() => client.call(() => client.dio.get('/rider/confirmations/today'), (j) => jsonList(j).map(Confirmation.fromJson).toList());
   Future<Confirmation> answer(int id, String status) => client.call(() => client.dio.post('/rider/confirmations/$id', data: {'status': status}), (j) => Confirmation.fromJson(jsonMap(j)));
   Future<List<DriverPrice>> prices() => client.call(() => client.dio.get('/driver/prices'), (j) => jsonList(j).map(DriverPrice.fromJson).toList());
   Future<DriverPrice> setPrice(int route, int min, int max, double value) => client.call(() => client.dio.put('/driver/prices', data: {'route_id': route, 'min_riders': min, 'max_riders': max, 'price_per_person': value}), (j) => DriverPrice.fromJson(jsonMap(j)));
   Future<List<DriverOffer>> offers() => client.call(() => client.dio.get('/driver/offers'), (j) => jsonList(j).map(DriverOffer.fromJson).toList());
   Future<DriverOffer> respondOffer(int id, bool accept) => client.call(() => client.dio.post('/driver/offers/$id/${accept ? 'accept' : 'decline'}'), (j) => DriverOffer.fromJson(jsonMap(j)));
-  Future<void> confirmTrip(int id) => client.call(() => client.dio.post('/rider/trips/$id/confirm'), (_) {});
+  Future<void> confirmTrip(int id) => client.call(() => client.dio.post('/rider/trips/$id/confirm'), (_) => null);
 }

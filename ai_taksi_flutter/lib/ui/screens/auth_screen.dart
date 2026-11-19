@@ -46,5 +46,5 @@ class _LoginState extends ConsumerState<LoginScreen> {
       if (error != null) ...[const SizedBox(height: 8), Text(error!, style: const TextStyle(color: Colors.red))],
       const SizedBox(height: 16), FilledButton(onPressed: busy ? null : (codeSent ? verify : request), child: busy ? const SizedBox(height: 22, width: 22, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2)) : Text(codeSent ? 'Tasdiqlash' : 'Davom etish')),
     ])), const SizedBox(height: 20), const Text('Haydovchilar faqat administrator tomonidan ro‘yxatdan o‘tkaziladi.', textAlign: TextAlign.center, style: TextStyle(color: Colors.black54)),
-  ]))))));
+  ])))));
 }
