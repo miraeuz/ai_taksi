@@ -1,0 +1,93 @@
+AI_Taksi_GitHub_Handoff/
+├── ai_taksi_data/
+│   ├── alembic/
+│   │   ├── versions/
+│   │   │   ├── 0001_initial.py
+│   │   │   ├── 0002_auth_availability.py
+│   │   │   ├── 0003_driver_offers.py
+│   │   │   └── 0004_query_indexes.py
+│   │   └── env.py
+│   ├── app/
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── admin.py
+│   │   │   ├── auth.py
+│   │   │   ├── driver.py
+│   │   │   ├── offers.py
+│   │   │   └── rider.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── base.py
+│   │   │   ├── entities.py
+│   │   │   ├── enums.py
+│   │   │   ├── offers.py
+│   │   │   └── security.py
+│   │   ├── services/
+│   │   │   ├── __init__.py
+│   │   │   ├── matching.py
+│   │   │   ├── security.py
+│   │   │   ├── sms.py
+│   │   │   └── workflow.py
+│   │   ├── __init__.py
+│   │   ├── config.py
+│   │   ├── db.py
+│   │   ├── deps.py
+│   │   ├── main.py
+│   │   ├── schemas.py
+│   │   └── tasks.py
+│   ├── scripts/
+│   │   ├── __init__.py
+│   │   └── seed.py
+│   ├── tests/
+│   │   ├── __init__.py
+│   │   ├── conftest.py
+│   │   ├── test_api.py
+│   │   └── test_matching.py
+│   ├── .env.example
+│   ├── .gitignore
+│   ├── alembic.ini
+│   ├── compose.yaml
+│   ├── Dockerfile
+│   ├── README.md
+│   └── requirements.txt
+├── ai_taksi_flutter/
+│   ├── android/
+│   │   └── app/
+│   │       └── src/
+│   │           ├── debug/
+│   │           │   └── AndroidManifest.xml
+│   │           └── main/
+│   │               └── AndroidManifest.xml
+│   ├── lib/
+│   │   ├── core/
+│   │   │   ├── chat_policy.dart
+│   │   │   └── config.dart
+│   │   ├── data/
+│   │   │   └── api.dart
+│   │   ├── models/
+│   │   │   └── models.dart
+│   │   ├── state/
+│   │   │   └── providers.dart
+│   │   ├── ui/
+│   │   │   ├── screens/
+│   │   │   │   ├── auth_screen.dart
+│   │   │   │   ├── driver_screens.dart
+│   │   │   │   ├── rider_screens.dart
+│   │   │   │   └── trip_screens.dart
+│   │   │   └── widgets/
+│   │   │       └── common.dart
+│   │   └── main.dart
+│   ├── test/
+│   │   └── chat_policy_test.dart
+│   ├── analysis_options.yaml
+│   ├── pubspec.yaml
+│   └── README.md
+├── docs/
+│   ├── AI_Taksi_Concept.png
+│   ├── Competition_Nizom.pdf
+│   ├── FILE_TREE.txt
+│   ├── PROJECT_SPECIFICATION.md
+│   └── SIMULATION_OUTPUT.txt
+├── .gitignore
+├── AI_Taksi_Engineering_Audit.md
+└── HANDOFF.md

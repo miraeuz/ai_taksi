@@ -1,0 +1,95 @@
+
+SIMULATION: Kosonsoy -> NamSU, 2026-11-23, arrive by 13:00
+{
+  "daily_questions": 40,
+  "yes": 40,
+  "grouping": {
+    "created": 6,
+    "cancelled": 0,
+    "confirmed_riders": 40
+  },
+  "matching": {
+    "trips_offered": 2,
+    "unmatched_groups": 4,
+    "trip_ids": [
+      1,
+      2
+    ],
+    "unmatched_ids": [
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  "groups": [
+    {
+      "group": 1,
+      "pickup_stops": [
+        "Kosonsoy markazi (namuna)"
+      ],
+      "riders": 7,
+      "car_type": "damas",
+      "driver": "Javohir Rasulov",
+      "price_som": 20000,
+      "status": "matched"
+    },
+    {
+      "group": 2,
+      "pickup_stops": [
+        "Kosonsoy bozor bekati (namuna)"
+      ],
+      "riders": 7,
+      "car_type": "damas",
+      "driver": "Islom Ergashev",
+      "price_som": 21000,
+      "status": "matched"
+    },
+    {
+      "group": 3,
+      "pickup_stops": [
+        "Kosonsoy janub bekati (namuna)"
+      ],
+      "riders": 7,
+      "car_type": "damas",
+      "driver": "UNMATCHED",
+      "price_som": null,
+      "status": "cancelled"
+    },
+    {
+      "group": 4,
+      "pickup_stops": [
+        "Yo‘l bo‘yi 1-bekat (namuna)"
+      ],
+      "riders": 7,
+      "car_type": "damas",
+      "driver": "UNMATCHED",
+      "price_som": null,
+      "status": "cancelled"
+    },
+    {
+      "group": 5,
+      "pickup_stops": [
+        "Yo‘l bo‘yi 2-bekat (namuna)"
+      ],
+      "riders": 6,
+      "car_type": "damas",
+      "driver": "UNMATCHED",
+      "price_som": null,
+      "status": "cancelled"
+    },
+    {
+      "group": 6,
+      "pickup_stops": [
+        "Namangan kirish bekati (namuna)"
+      ],
+      "riders": 6,
+      "car_type": "damas",
+      "driver": "UNMATCHED",
+      "price_som": null,
+      "status": "cancelled"
+    }
+  ]
+}
+.
+1 passed in 0.21s

@@ -1,0 +1,25 @@
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Python build/test artifacts
+**/__pycache__/
+**/.pytest_cache/
+**/*.py[cod]
+**/.venv/
+
+# Flutter/Android generated output
+ai_taksi_flutter/.dart_tool/
+ai_taksi_flutter/.flutter-plugins
+ai_taksi_flutter/.flutter-plugins-dependencies
+ai_taksi_flutter/build/
+ai_taksi_flutter/android/.gradle/
+
+# Developer/editor files
+.DS_Store
+.idea/
+.vscode/
