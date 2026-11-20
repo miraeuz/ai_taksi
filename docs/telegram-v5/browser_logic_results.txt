@@ -1,0 +1,13 @@
+PASS mock login view with custom app icon
+PASS mock login without real SMS
+PASS multi-destination route discovery
+PASS destination selection updates home
+PASS daily confirmation and trip lifecycle
+PASS chat contact pattern blocks message
+PASS light/dark theme switch
+PASS driver role changes bottom navigation
+PASS driver offers accept and decline
+PASS driver tariff editing persists in mock state
+PASS mock trip pickup checklist
+PASS logout and another mock user
+Browser logic suite completed.

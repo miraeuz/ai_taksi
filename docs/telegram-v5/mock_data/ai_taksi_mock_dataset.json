@@ -1,0 +1,1666 @@
+{
+  "metadata": {
+    "dataset": "AI Taksi Telegram-style design test",
+    "all_values_are_mock": true,
+    "provider": "none",
+    "real_sms": false,
+    "real_booking": false,
+    "real_location_tracking": false,
+    "note": "Destination labels reflect regionally relevant place names; pickup stops, trip offers, prices, ratings and availability are illustrative only."
+  },
+  "origins": [
+    {
+      "id": "kosonsoy",
+      "name": "Kosonsoy"
+    },
+    {
+      "id": "toraqorgon",
+      "name": "To‘raqo‘rg‘on"
+    },
+    {
+      "id": "chust",
+      "name": "Chust"
+    },
+    {
+      "id": "yangiqorgon",
+      "name": "Yangiqo‘rg‘on"
+    },
+    {
+      "id": "pop",
+      "name": "Pop"
+    },
+    {
+      "id": "namangan",
+      "name": "Namangan"
+    }
+  ],
+  "destinations": [
+    {
+      "id": "yuksalish",
+      "name": "Yuksalish · NamDU kampusi",
+      "category": "Universitet"
+    },
+    {
+      "id": "namdu",
+      "name": "Namangan davlat universiteti",
+      "category": "Universitet"
+    },
+    {
+      "id": "texnika",
+      "name": "Namangan davlat texnika universiteti",
+      "category": "Universitet"
+    },
+    {
+      "id": "pedagogika",
+      "name": "Namangan davlat pedagogika instituti",
+      "category": "Universitet"
+    },
+    {
+      "id": "ubs",
+      "name": "University of Business and Science",
+      "category": "Universitet"
+    },
+    {
+      "id": "davlatobod",
+      "name": "Davlatobod markazi",
+      "category": "Shahar"
+    },
+    {
+      "id": "shahar",
+      "name": "Namangan shahar markazi",
+      "category": "Shahar"
+    },
+    {
+      "id": "vokzal",
+      "name": "Namangan temir yo‘l vokzali",
+      "category": "Transport"
+    },
+    {
+      "id": "avtovokzal",
+      "name": "Namangan avtovokzali",
+      "category": "Transport"
+    },
+    {
+      "id": "bozor",
+      "name": "Chorsu bozori",
+      "category": "Shahar"
+    },
+    {
+      "id": "shifoxona",
+      "name": "Namangan tibbiyot markazi",
+      "category": "Shahar"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "cobalt",
+      "name": "Cobalt",
+      "backend_category": "yengil",
+      "seats": 3,
+      "sample_price_per_person": 32000
+    },
+    {
+      "id": "onix",
+      "name": "Onix",
+      "backend_category": "yengil",
+      "seats": 3,
+      "sample_price_per_person": 39000
+    },
+    {
+      "id": "byd",
+      "name": "BYD e2",
+      "backend_category": "yengil",
+      "seats": 3,
+      "sample_price_per_person": 42000
+    },
+    {
+      "id": "damas",
+      "name": "Damas",
+      "backend_category": "damas",
+      "seats": 8,
+      "sample_price_per_person": 20000
+    },
+    {
+      "id": "sprinter",
+      "name": "Sprinter",
+      "backend_category": "avtobus",
+      "seats": 14,
+      "sample_price_per_person": 19000
+    },
+    {
+      "id": "isuzu",
+      "name": "Isuzu",
+      "backend_category": "avtobus",
+      "seats": 22,
+      "sample_price_per_person": 17000
+    },
+    {
+      "id": "yutong",
+      "name": "Yutong",
+      "backend_category": "avtobus",
+      "seats": 28,
+      "sample_price_per_person": 15000
+    }
+  ],
+  "riders": [
+    {
+      "id": "R-001",
+      "display_name": "Shahzoda",
+      "origin_id": "chust",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-002",
+      "display_name": "Akmal",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-003",
+      "display_name": "Farrux",
+      "origin_id": "toraqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-004",
+      "display_name": "Zilola",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-005",
+      "display_name": "Sherzod",
+      "origin_id": "yangiqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-006",
+      "display_name": "Komil",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-007",
+      "display_name": "Dilnoza",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-008",
+      "display_name": "Muslima",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-009",
+      "display_name": "Bekzod",
+      "origin_id": "pop",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-010",
+      "display_name": "Ulug‘bek",
+      "origin_id": "kosonsoy",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-011",
+      "display_name": "Mohinur",
+      "origin_id": "kosonsoy",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-012",
+      "display_name": "Islom",
+      "origin_id": "kosonsoy",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-013",
+      "display_name": "Dilshod",
+      "origin_id": "chust",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-014",
+      "display_name": "Malika",
+      "origin_id": "yangiqorgon",
+      "destination_id": "namdu",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-015",
+      "display_name": "Gulbahor",
+      "origin_id": "chust",
+      "destination_id": "texnika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-016",
+      "display_name": "Jasur",
+      "origin_id": "yangiqorgon",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-017",
+      "display_name": "Bobur",
+      "origin_id": "kosonsoy",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-018",
+      "display_name": "Shahnoza",
+      "origin_id": "kosonsoy",
+      "destination_id": "texnika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-019",
+      "display_name": "Javohir",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-020",
+      "display_name": "Oybek",
+      "origin_id": "chust",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-021",
+      "display_name": "Madina",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-022",
+      "display_name": "Sardor",
+      "origin_id": "chust",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-023",
+      "display_name": "Alisher",
+      "origin_id": "chust",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-024",
+      "display_name": "Aziza",
+      "origin_id": "yangiqorgon",
+      "destination_id": "texnika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-025",
+      "display_name": "Shahzoda",
+      "origin_id": "kosonsoy",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-026",
+      "display_name": "Akmal",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-027",
+      "display_name": "Farrux",
+      "origin_id": "yangiqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-028",
+      "display_name": "Zilola",
+      "origin_id": "yangiqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-029",
+      "display_name": "Sherzod",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-030",
+      "display_name": "Komil",
+      "origin_id": "yangiqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-031",
+      "display_name": "Dilnoza",
+      "origin_id": "chust",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-032",
+      "display_name": "Muslima",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-033",
+      "display_name": "Bekzod",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-034",
+      "display_name": "Ulug‘bek",
+      "origin_id": "kosonsoy",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-035",
+      "display_name": "Mohinur",
+      "origin_id": "toraqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-036",
+      "display_name": "Islom",
+      "origin_id": "kosonsoy",
+      "destination_id": "namdu",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-037",
+      "display_name": "Dilshod",
+      "origin_id": "kosonsoy",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-038",
+      "display_name": "Malika",
+      "origin_id": "yangiqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-039",
+      "display_name": "Gulbahor",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-040",
+      "display_name": "Jasur",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-041",
+      "display_name": "Bobur",
+      "origin_id": "yangiqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-042",
+      "display_name": "Shahnoza",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-043",
+      "display_name": "Javohir",
+      "origin_id": "pop",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-044",
+      "display_name": "Oybek",
+      "origin_id": "chust",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-045",
+      "display_name": "Madina",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-046",
+      "display_name": "Sardor",
+      "origin_id": "yangiqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-047",
+      "display_name": "Alisher",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-048",
+      "display_name": "Aziza",
+      "origin_id": "chust",
+      "destination_id": "texnika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-049",
+      "display_name": "Shahzoda",
+      "origin_id": "kosonsoy",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-050",
+      "display_name": "Akmal",
+      "origin_id": "pop",
+      "destination_id": "namdu",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-051",
+      "display_name": "Farrux",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-052",
+      "display_name": "Zilola",
+      "origin_id": "chust",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-053",
+      "display_name": "Sherzod",
+      "origin_id": "chust",
+      "destination_id": "namdu",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-054",
+      "display_name": "Komil",
+      "origin_id": "yangiqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-055",
+      "display_name": "Dilnoza",
+      "origin_id": "yangiqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-056",
+      "display_name": "Muslima",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-057",
+      "display_name": "Bekzod",
+      "origin_id": "chust",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-058",
+      "display_name": "Ulug‘bek",
+      "origin_id": "yangiqorgon",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-059",
+      "display_name": "Mohinur",
+      "origin_id": "yangiqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-060",
+      "display_name": "Islom",
+      "origin_id": "chust",
+      "destination_id": "ubs",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-061",
+      "display_name": "Dilshod",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-062",
+      "display_name": "Malika",
+      "origin_id": "yangiqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-063",
+      "display_name": "Gulbahor",
+      "origin_id": "chust",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-064",
+      "display_name": "Jasur",
+      "origin_id": "chust",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-065",
+      "display_name": "Bobur",
+      "origin_id": "toraqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-066",
+      "display_name": "Shahnoza",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-067",
+      "display_name": "Javohir",
+      "origin_id": "kosonsoy",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-068",
+      "display_name": "Oybek",
+      "origin_id": "kosonsoy",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-069",
+      "display_name": "Madina",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-070",
+      "display_name": "Sardor",
+      "origin_id": "kosonsoy",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-071",
+      "display_name": "Alisher",
+      "origin_id": "toraqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-072",
+      "display_name": "Aziza",
+      "origin_id": "kosonsoy",
+      "destination_id": "namdu",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-073",
+      "display_name": "Shahzoda",
+      "origin_id": "kosonsoy",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-074",
+      "display_name": "Akmal",
+      "origin_id": "chust",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-075",
+      "display_name": "Farrux",
+      "origin_id": "toraqorgon",
+      "destination_id": "texnika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-076",
+      "display_name": "Zilola",
+      "origin_id": "chust",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-077",
+      "display_name": "Sherzod",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-078",
+      "display_name": "Komil",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-079",
+      "display_name": "Dilnoza",
+      "origin_id": "toraqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-080",
+      "display_name": "Muslima",
+      "origin_id": "pop",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-081",
+      "display_name": "Bekzod",
+      "origin_id": "pop",
+      "destination_id": "namdu",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-082",
+      "display_name": "Ulug‘bek",
+      "origin_id": "chust",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-083",
+      "display_name": "Mohinur",
+      "origin_id": "yangiqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-084",
+      "display_name": "Islom",
+      "origin_id": "toraqorgon",
+      "destination_id": "namdu",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-085",
+      "display_name": "Dilshod",
+      "origin_id": "chust",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-086",
+      "display_name": "Malika",
+      "origin_id": "yangiqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-087",
+      "display_name": "Gulbahor",
+      "origin_id": "toraqorgon",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-088",
+      "display_name": "Jasur",
+      "origin_id": "toraqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-089",
+      "display_name": "Bobur",
+      "origin_id": "kosonsoy",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-090",
+      "display_name": "Shahnoza",
+      "origin_id": "yangiqorgon",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-091",
+      "display_name": "Javohir",
+      "origin_id": "kosonsoy",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-092",
+      "display_name": "Oybek",
+      "origin_id": "chust",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-093",
+      "display_name": "Madina",
+      "origin_id": "kosonsoy",
+      "destination_id": "yuksalish",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    },
+    {
+      "id": "R-094",
+      "display_name": "Sardor",
+      "origin_id": "yangiqorgon",
+      "destination_id": "ubs",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "pending",
+      "is_fictional": true
+    },
+    {
+      "id": "R-095",
+      "display_name": "Alisher",
+      "origin_id": "chust",
+      "destination_id": "texnika",
+      "schedule_days": [
+        0,
+        2
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "declined",
+      "is_fictional": true
+    },
+    {
+      "id": "R-096",
+      "display_name": "Aziza",
+      "origin_id": "chust",
+      "destination_id": "pedagogika",
+      "schedule_days": [
+        1,
+        3
+      ],
+      "arrive_by": "13:00",
+      "sample_status": "confirmed",
+      "is_fictional": true
+    }
+  ],
+  "drivers": [
+    {
+      "id": "D-01",
+      "first_name": "Sherzod",
+      "vehicle_id": "cobalt",
+      "rating": 4.6,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-02",
+      "first_name": "Islom",
+      "vehicle_id": "onix",
+      "rating": 4.7,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": false
+    },
+    {
+      "id": "D-03",
+      "first_name": "Javohir",
+      "vehicle_id": "byd",
+      "rating": 4.8,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-04",
+      "first_name": "Akmal",
+      "vehicle_id": "damas",
+      "rating": 4.9,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-05",
+      "first_name": "Bekzod",
+      "vehicle_id": "sprinter",
+      "rating": 5.0,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-06",
+      "first_name": "Jasur",
+      "vehicle_id": "isuzu",
+      "rating": 4.6,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": false
+    },
+    {
+      "id": "D-07",
+      "first_name": "Alisher",
+      "vehicle_id": "yutong",
+      "rating": 4.7,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-08",
+      "first_name": "Komil",
+      "vehicle_id": "cobalt",
+      "rating": 4.8,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-09",
+      "first_name": "Dilshod",
+      "vehicle_id": "onix",
+      "rating": 4.9,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-10",
+      "first_name": "Oybek",
+      "vehicle_id": "byd",
+      "rating": 5.0,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": false
+    },
+    {
+      "id": "D-11",
+      "first_name": "Farrux",
+      "vehicle_id": "damas",
+      "rating": 4.6,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-12",
+      "first_name": "Ulug‘bek",
+      "vehicle_id": "sprinter",
+      "rating": 4.7,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-13",
+      "first_name": "Bobur",
+      "vehicle_id": "isuzu",
+      "rating": 4.8,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    },
+    {
+      "id": "D-14",
+      "first_name": "Aziza",
+      "vehicle_id": "yutong",
+      "rating": 4.9,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": false
+    },
+    {
+      "id": "D-15",
+      "first_name": "Dilnoza",
+      "vehicle_id": "cobalt",
+      "rating": 5.0,
+      "is_fictional": true,
+      "verified_demo_label": true,
+      "sample_available": true
+    }
+  ],
+  "offers": [
+    {
+      "id": "A-201",
+      "origin_id": "kosonsoy",
+      "destination_id": "yuksalish",
+      "driver_id": "D-01",
+      "vehicle_id": "cobalt",
+      "sample_price_per_person": 32000,
+      "seat_capacity": 3,
+      "pickup_time": "07:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-202",
+      "origin_id": "toraqorgon",
+      "destination_id": "namdu",
+      "driver_id": "D-02",
+      "vehicle_id": "onix",
+      "sample_price_per_person": 39000,
+      "seat_capacity": 3,
+      "pickup_time": "08:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-203",
+      "origin_id": "chust",
+      "destination_id": "texnika",
+      "driver_id": "D-03",
+      "vehicle_id": "byd",
+      "sample_price_per_person": 42000,
+      "seat_capacity": 3,
+      "pickup_time": "09:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-204",
+      "origin_id": "yangiqorgon",
+      "destination_id": "pedagogika",
+      "driver_id": "D-04",
+      "vehicle_id": "damas",
+      "sample_price_per_person": 20000,
+      "seat_capacity": 8,
+      "pickup_time": "10:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-205",
+      "origin_id": "pop",
+      "destination_id": "ubs",
+      "driver_id": "D-05",
+      "vehicle_id": "sprinter",
+      "sample_price_per_person": 19000,
+      "seat_capacity": 14,
+      "pickup_time": "11:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-206",
+      "origin_id": "namangan",
+      "destination_id": "davlatobod",
+      "driver_id": "D-06",
+      "vehicle_id": "isuzu",
+      "sample_price_per_person": 17000,
+      "seat_capacity": 22,
+      "pickup_time": "12:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-207",
+      "origin_id": "kosonsoy",
+      "destination_id": "shahar",
+      "driver_id": "D-07",
+      "vehicle_id": "yutong",
+      "sample_price_per_person": 15000,
+      "seat_capacity": 28,
+      "pickup_time": "13:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-208",
+      "origin_id": "toraqorgon",
+      "destination_id": "vokzal",
+      "driver_id": "D-08",
+      "vehicle_id": "cobalt",
+      "sample_price_per_person": 32000,
+      "seat_capacity": 3,
+      "pickup_time": "14:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-209",
+      "origin_id": "chust",
+      "destination_id": "avtovokzal",
+      "driver_id": "D-09",
+      "vehicle_id": "onix",
+      "sample_price_per_person": 39000,
+      "seat_capacity": 3,
+      "pickup_time": "15:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-210",
+      "origin_id": "yangiqorgon",
+      "destination_id": "bozor",
+      "driver_id": "D-10",
+      "vehicle_id": "byd",
+      "sample_price_per_person": 42000,
+      "seat_capacity": 3,
+      "pickup_time": "16:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-211",
+      "origin_id": "pop",
+      "destination_id": "shifoxona",
+      "driver_id": "D-11",
+      "vehicle_id": "damas",
+      "sample_price_per_person": 20000,
+      "seat_capacity": 8,
+      "pickup_time": "07:40",
+      "is_fictional": true
+    },
+    {
+      "id": "A-212",
+      "origin_id": "namangan",
+      "destination_id": "yuksalish",
+      "driver_id": "D-12",
+      "vehicle_id": "sprinter",
+      "sample_price_per_person": 19000,
+      "seat_capacity": 14,
+      "pickup_time": "08:40",
+      "is_fictional": true
+    }
+  ]
+}

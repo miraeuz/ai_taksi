@@ -1,0 +1,6 @@
+flutter analyze
+NOT RUN: flutter executable not installed
+flutter test
+NOT RUN: flutter executable not installed
+flutter build apk --debug
+NOT RUN: flutter executable not installed

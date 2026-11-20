@@ -8,6 +8,8 @@ void main() {
   test('blocks usernames and Telegram links', () {
     expect(ChatPolicy.permitted('Telegram: @username_123'), isFalse);
     expect(ChatPolicy.permitted('t.me/test_name'), isFalse);
+    expect(ChatPolicy.permitted('https://example.com'), isFalse);
+    expect(ChatPolicy.permitted('www.example.com'), isFalse);
   });
   test('allows normal trip text', () => expect(ChatPolicy.permitted('Bekatda kutyapman'), isTrue));
   test('opens only one hour either side', () {
