@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090e25">
+<title>AI Taksi AURORA 4 · Premium interactive concept</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<div class="showcase">
+  <aside class="editorial">
+    <div class="brand"><span class="brand-mark">✦</span><span>AI<span class="brand-accent">Taksi</span></span><span class="brand-tag">AURORA 4 / 2026</span></div>
+    <div class="eyebrow light"><span class="eyeline"></span> SMART SHARED RIDES · UZBEKISTAN</div>
+    <h1>Bir yo‘l.<br><em>Cheksiz</em><br>imkoniyat.</h1>
+    <p class="editor-desc">Kosonsoy ↔ Namangan yo‘nalishi uchun aqlli, hamyonbop va xavfsiz birgalikdagi qatnov tajribasi.</p>
+    <div class="side-pills"><span>✦ 7 transport modeli</span><span>◈ Aqlli jadval</span><span>◇ Xavfsiz demo</span></div>
+    <div class="side-metrics">
+      <div><b>64</b><small>Demo yo‘lovchi</small></div>
+      <div><b>10</b><small>Namuna haydovchi</small></div>
+      <div><b>18</b><small>Tarixiy safar</small></div>
+    </div>
+    <div class="editor-actions"><button onclick="switchRole('rider')" id="previewRider">Yo‘lovchi rejimi ↗</button><button onclick="switchRole('driver')" id="previewDriver">Haydovchi rejimi ↗</button></div>
+    <div class="side-footer"><span class="pulse-dot"></span> OFFLINE INTERACTIVE CONCEPT <span>·</span> NO REAL BOOKINGS</div>
+  </aside>
+  <section class="device" aria-label="AI Taksi mobil ilovasi interaktiv demo">
+    <div class="statusbar"><span>9:41</span><span class="island"></span><span>●●● ▰</span></div>
+    <header class="appbar"><div class="mini-logo">✦</div><div class="appbrand"><b>AI Taksi</b><small>KOSONSOY · NAMANGAN</small></div><div class="spacer"></div><button class="header-icon theme-btn" id="themeBtn" onclick="toggleAuroraPreviewTheme()" title="Tungi / yorug‘ rejim" aria-label="Tungi yoki yorug‘ rejim">☾</button><button class="header-icon" onclick="openPanel('notifications')" aria-label="Bildirishnomalar"><span id="bellIcon">♧</span><span id="notifDot" class="notif-dot"></span></button><span class="demo-status">DEMO</span></header>
+    <div class="app-content" id="appContent" aria-live="polite"></div>
+    <nav class="bottom-nav" id="bottomNav" aria-label="Asosiy navigatsiya"></nav>
+  </section>
+</div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>

@@ -1,0 +1,1349 @@
+{
+  "meta": {
+    "app": "AI Taksi NOVA",
+    "version": "3.0.0-demo",
+    "offline_only": true,
+    "synthetic_fixtures": true,
+    "not_bookable": true,
+    "generated_on": "2026-11-19",
+    "backend_unchanged": true,
+    "note": "No phone numbers, credentials, real identity documents or GPS are included. Vehicle variants map onto the backend 3 vehicle classes."
+  },
+  "route": {
+    "id": "kosonsoy_namsu_demo",
+    "origin": "Kosonsoy",
+    "destination": "Namangan / NamSU",
+    "pickup_points": [
+      {
+        "id": "P01",
+        "name": "Kosonsoy markazi",
+        "verified_demo": true
+      },
+      {
+        "id": "P02",
+        "name": "Kosonsoy bozori",
+        "verified_demo": true
+      },
+      {
+        "id": "P03",
+        "name": "Kosonsoy janub",
+        "verified_demo": true
+      },
+      {
+        "id": "P04",
+        "name": "Yo‘l bo‘yi 1",
+        "verified_demo": true
+      },
+      {
+        "id": "P05",
+        "name": "Yo‘l bo‘yi 2",
+        "verified_demo": true
+      },
+      {
+        "id": "P06",
+        "name": "Namangan kirish",
+        "verified_demo": true
+      }
+    ]
+  },
+  "vehicle_catalog": [
+    {
+      "id": "cobalt",
+      "backend_kind": "Yengil",
+      "model": "Chevrolet Cobalt",
+      "seats": 3,
+      "base_estimate_som": 35000,
+      "electric": false
+    },
+    {
+      "id": "onix",
+      "backend_kind": "Yengil",
+      "model": "Chevrolet Onix",
+      "seats": 3,
+      "base_estimate_som": 41000,
+      "electric": false
+    },
+    {
+      "id": "byd",
+      "backend_kind": "Yengil",
+      "model": "BYD e2",
+      "seats": 3,
+      "base_estimate_som": 43000,
+      "electric": true
+    },
+    {
+      "id": "damas",
+      "backend_kind": "Damas",
+      "model": "Chevrolet Damas",
+      "seats": 8,
+      "base_estimate_som": 24000,
+      "electric": false
+    },
+    {
+      "id": "sprinter",
+      "backend_kind": "Avtobus",
+      "model": "Mercedes Sprinter",
+      "seats": 14,
+      "base_estimate_som": 23000,
+      "electric": false
+    },
+    {
+      "id": "isuzu",
+      "backend_kind": "Avtobus",
+      "model": "Isuzu SAZ",
+      "seats": 22,
+      "base_estimate_som": 19000,
+      "electric": false
+    },
+    {
+      "id": "yutong",
+      "backend_kind": "Avtobus",
+      "model": "Yutong",
+      "seats": 28,
+      "base_estimate_som": 17000,
+      "electric": false
+    }
+  ],
+  "riders": [
+    {
+      "id": "R001",
+      "first_name": "Sevinch",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R002",
+      "first_name": "Samira",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R003",
+      "first_name": "Feruza",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R004",
+      "first_name": "Komil",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R005",
+      "first_name": "Murod",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R006",
+      "first_name": "Farida",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R007",
+      "first_name": "Munisa",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R008",
+      "first_name": "Sherzod",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R009",
+      "first_name": "Alisher",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R010",
+      "first_name": "Malika",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R011",
+      "first_name": "Zuhra",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R012",
+      "first_name": "Oydin",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R013",
+      "first_name": "Dilshod",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R014",
+      "first_name": "Jamshid",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R015",
+      "first_name": "Dilnoza",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R016",
+      "first_name": "Diyora",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R017",
+      "first_name": "Rayhona",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R018",
+      "first_name": "Ulug‘bek",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R019",
+      "first_name": "Madina",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R020",
+      "first_name": "Gulnoza",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R021",
+      "first_name": "Nodira",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R022",
+      "first_name": "Islom",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R023",
+      "first_name": "Sardor",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R024",
+      "first_name": "Nilufar",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R025",
+      "first_name": "Mohira",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R026",
+      "first_name": "Sabina",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R027",
+      "first_name": "Aziz",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R028",
+      "first_name": "Aziza",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R029",
+      "first_name": "Maftuna",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R030",
+      "first_name": "Shahnoza",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R031",
+      "first_name": "Javohir",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R032",
+      "first_name": "Oybek",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R033",
+      "first_name": "Sevinch",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R034",
+      "first_name": "Samira",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R035",
+      "first_name": "Feruza",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R036",
+      "first_name": "Komil",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R037",
+      "first_name": "Murod",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R038",
+      "first_name": "Farida",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R039",
+      "first_name": "Munisa",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R040",
+      "first_name": "Sherzod",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_confirmed",
+      "language": "uz"
+    },
+    {
+      "id": "R041",
+      "first_name": "Alisher",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R042",
+      "first_name": "Malika",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R043",
+      "first_name": "Zuhra",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R044",
+      "first_name": "Oydin",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R045",
+      "first_name": "Dilshod",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R046",
+      "first_name": "Jamshid",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R047",
+      "first_name": "Dilnoza",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R048",
+      "first_name": "Diyora",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R049",
+      "first_name": "Rayhona",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R050",
+      "first_name": "Ulug‘bek",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R051",
+      "first_name": "Madina",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R052",
+      "first_name": "Gulnoza",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R053",
+      "first_name": "Nodira",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R054",
+      "first_name": "Islom",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R055",
+      "first_name": "Sardor",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R056",
+      "first_name": "Nilufar",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R057",
+      "first_name": "Mohira",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R058",
+      "first_name": "Sabina",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R059",
+      "first_name": "Aziz",
+      "home_stop_id": "P05",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R060",
+      "first_name": "Aziza",
+      "home_stop_id": "P06",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R061",
+      "first_name": "Maftuna",
+      "home_stop_id": "P01",
+      "weekly_days": [
+        "Mon",
+        "Wed",
+        "Fri"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R062",
+      "first_name": "Shahnoza",
+      "home_stop_id": "P02",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R063",
+      "first_name": "Javohir",
+      "home_stop_id": "P03",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    },
+    {
+      "id": "R064",
+      "first_name": "Oybek",
+      "home_stop_id": "P04",
+      "weekly_days": [
+        "Mon",
+        "Wed"
+      ],
+      "arrive_by": "13:00",
+      "status": "demo_scheduled",
+      "language": "uz"
+    }
+  ],
+  "drivers": [
+    {
+      "id": "D01",
+      "first_name": "Sherzod",
+      "vehicle_id": "damas",
+      "verified_by_admin": true,
+      "rating": 4.7,
+      "plate": "DEMO-PLATE-01",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D02",
+      "first_name": "Islom",
+      "vehicle_id": "damas",
+      "verified_by_admin": true,
+      "rating": 4.8,
+      "plate": "DEMO-PLATE-02",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D03",
+      "first_name": "Javohir",
+      "vehicle_id": "cobalt",
+      "verified_by_admin": true,
+      "rating": 4.9,
+      "plate": "DEMO-PLATE-03",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D04",
+      "first_name": "Komil",
+      "vehicle_id": "onix",
+      "verified_by_admin": true,
+      "rating": 4.7,
+      "plate": "DEMO-PLATE-04",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D05",
+      "first_name": "Dilshod",
+      "vehicle_id": "sprinter",
+      "verified_by_admin": true,
+      "rating": 4.8,
+      "plate": "DEMO-PLATE-05",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D06",
+      "first_name": "Alisher",
+      "vehicle_id": "isuzu",
+      "verified_by_admin": true,
+      "rating": 4.9,
+      "plate": "DEMO-PLATE-06",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D07",
+      "first_name": "Oybek",
+      "vehicle_id": "yutong",
+      "verified_by_admin": true,
+      "rating": 4.7,
+      "plate": "DEMO-PLATE-07",
+      "available": false,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D08",
+      "first_name": "Ulug‘bek",
+      "vehicle_id": "byd",
+      "verified_by_admin": true,
+      "rating": 4.8,
+      "plate": "DEMO-PLATE-08",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D09",
+      "first_name": "Sardor",
+      "vehicle_id": "cobalt",
+      "verified_by_admin": true,
+      "rating": 4.9,
+      "plate": "DEMO-PLATE-09",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    },
+    {
+      "id": "D10",
+      "first_name": "Aziz",
+      "vehicle_id": "damas",
+      "verified_by_admin": true,
+      "rating": 4.7,
+      "plate": "DEMO-PLATE-10",
+      "available": true,
+      "price_bands_som_per_person": {
+        "1-3": 30000,
+        "4-7": 25000,
+        "8": 20000,
+        "9-14": 18000,
+        "15-28": 15000
+      }
+    }
+  ],
+  "offers": [
+    {
+      "id": 101,
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "damas",
+      "passengers": 8,
+      "pickup_time": "10:40"
+    },
+    {
+      "id": 102,
+      "route": "Kosonsoy → Namangan",
+      "vehicle_id": "damas",
+      "passengers": 6,
+      "pickup_time": "16:20"
+    },
+    {
+      "id": 103,
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "sprinter",
+      "passengers": 12,
+      "pickup_time": "08:15"
+    },
+    {
+      "id": 104,
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "cobalt",
+      "passengers": 3,
+      "pickup_time": "17:40"
+    },
+    {
+      "id": 105,
+      "route": "Kosonsoy → Namangan",
+      "vehicle_id": "isuzu",
+      "passengers": 22,
+      "pickup_time": "07:10"
+    }
+  ],
+  "trip_history": [
+    {
+      "id": "T001",
+      "date": "2026-11-18",
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "damas",
+      "driver_id": "D01",
+      "rider_count": 2,
+      "fare_per_person_som": 24000,
+      "rating": 4.5,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T002",
+      "date": "2026-11-16",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "yutong",
+      "driver_id": "D02",
+      "rider_count": 3,
+      "fare_per_person_som": 17000,
+      "rating": 4.6,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T003",
+      "date": "2026-11-14",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "byd",
+      "driver_id": "D03",
+      "rider_count": 3,
+      "fare_per_person_som": 43000,
+      "rating": 4.7,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T004",
+      "date": "2026-11-12",
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "isuzu",
+      "driver_id": "D04",
+      "rider_count": 5,
+      "fare_per_person_som": 19000,
+      "rating": 4.8,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T005",
+      "date": "2026-11-10",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "onix",
+      "driver_id": "D05",
+      "rider_count": 3,
+      "fare_per_person_som": 41000,
+      "rating": 4.9,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T006",
+      "date": "2026-11-08",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "sprinter",
+      "driver_id": "D06",
+      "rider_count": 7,
+      "fare_per_person_som": 23000,
+      "rating": 5.0,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T007",
+      "date": "2026-11-06",
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "cobalt",
+      "driver_id": "D07",
+      "rider_count": 3,
+      "fare_per_person_som": 35000,
+      "rating": 4.5,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T008",
+      "date": "2026-11-04",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "damas",
+      "driver_id": "D08",
+      "rider_count": 8,
+      "fare_per_person_som": 24000,
+      "rating": 4.6,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T009",
+      "date": "2026-11-02",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "yutong",
+      "driver_id": "D09",
+      "rider_count": 10,
+      "fare_per_person_som": 17000,
+      "rating": 4.7,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T010",
+      "date": "2026-10-31",
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "byd",
+      "driver_id": "D10",
+      "rider_count": 3,
+      "fare_per_person_som": 43000,
+      "rating": 4.8,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T011",
+      "date": "2026-10-29",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "isuzu",
+      "driver_id": "D01",
+      "rider_count": 12,
+      "fare_per_person_som": 19000,
+      "rating": 4.9,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T012",
+      "date": "2026-10-27",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "onix",
+      "driver_id": "D02",
+      "rider_count": 3,
+      "fare_per_person_som": 41000,
+      "rating": 5.0,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T013",
+      "date": "2026-10-25",
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "sprinter",
+      "driver_id": "D03",
+      "rider_count": 2,
+      "fare_per_person_som": 23000,
+      "rating": 4.5,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T014",
+      "date": "2026-10-23",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "cobalt",
+      "driver_id": "D04",
+      "rider_count": 3,
+      "fare_per_person_som": 35000,
+      "rating": 4.6,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T015",
+      "date": "2026-10-21",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "damas",
+      "driver_id": "D05",
+      "rider_count": 4,
+      "fare_per_person_som": 24000,
+      "rating": 4.7,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T016",
+      "date": "2026-10-19",
+      "route": "NamSU → Kosonsoy",
+      "vehicle_id": "yutong",
+      "driver_id": "D06",
+      "rider_count": 5,
+      "fare_per_person_som": 17000,
+      "rating": 4.8,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T017",
+      "date": "2026-10-17",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "byd",
+      "driver_id": "D07",
+      "rider_count": 3,
+      "fare_per_person_som": 43000,
+      "rating": 4.9,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    },
+    {
+      "id": "T018",
+      "date": "2026-10-15",
+      "route": "Kosonsoy → NamSU",
+      "vehicle_id": "isuzu",
+      "driver_id": "D08",
+      "rider_count": 7,
+      "fare_per_person_som": 19000,
+      "rating": 5.0,
+      "status": "completed",
+      "payment_method": "cash_demo"
+    }
+  ],
+  "sample_notifications": [
+    {
+      "id": "N01",
+      "kind": "schedule",
+      "message": "Ertangi jadval eslatmasi"
+    },
+    {
+      "id": "N02",
+      "kind": "offer",
+      "message": "Yangi guruhli taklif"
+    },
+    {
+      "id": "N03",
+      "kind": "privacy",
+      "message": "Raqamlar yashirilgan"
+    },
+    {
+      "id": "N04",
+      "kind": "fleet",
+      "message": "Avtopark variantlari yangilandi"
+    },
+    {
+      "id": "N05",
+      "kind": "safety",
+      "message": "Xavfsizlik yo‘riqnomasi"
+    },
+    {
+      "id": "N06",
+      "kind": "pickup",
+      "message": "Bekat vaqti o‘zgardi"
+    },
+    {
+      "id": "N07",
+      "kind": "rating",
+      "message": "Safardan keyin baho"
+    },
+    {
+      "id": "N08",
+      "kind": "earnings",
+      "message": "Haydovchi tushumi"
+    }
+  ]
+}
