@@ -4,7 +4,6 @@ import 'tg_theme.dart';
 import 'tg_widgets.dart';
 import 'demo_state.dart';
 import 'mock_data.dart';
-import 'rider_pages.dart';
 
 class TelegramProfilePage extends ConsumerWidget {
   const TelegramProfilePage({super.key});
@@ -70,7 +69,7 @@ class TelegramProfilePage extends ConsumerWidget {
               actions:[TextButton(onPressed:()=>Navigator.pop(c,false),
                 child:const Text('Yo‘q')),
                 FilledButton(onPressed:()=>Navigator.pop(c,true),child:const Text('Tiklash'))]));
-            if(reset==true){ctrl.reset();tgMessage(context,'Demo holati tiklandi');}}),
+            if(reset==true){ctrl.reset();if(!context.mounted)return;tgMessage(context,'Demo holati tiklandi');}}),
         TgRow(icon:Icons.logout_rounded,title:'Demo hisobdan chiqish',
           subtitle:'Istalgan vaqtda qayta kirishingiz mumkin',divider:false,
           onTap:ctrl.logout),
@@ -253,9 +252,9 @@ class _DemoTripChatPageState extends ConsumerState<DemoTripChatPage> {
             padding: const EdgeInsets.fromLTRB(13,18,13,12),
             itemCount:session.messages.length + 1,
             itemBuilder:(ctx,i) {
-              if(i==0) return Center(child:Padding(
+              if(i==0) { return Center(child:Padding(
                 padding:const EdgeInsets.only(bottom:17),
-                child:TgBadge('23 NOV · DEMO',color:context.secondaryInk)));
+                child:TgBadge('23 NOV · DEMO',color:context.secondaryInk))); }
               final message=session.messages[i-1];
               final mine=message.author=='Siz'||message.author==session.displayName||
                 message.author=='Aziza';

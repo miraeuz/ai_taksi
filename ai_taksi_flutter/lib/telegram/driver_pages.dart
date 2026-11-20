@@ -165,7 +165,7 @@ class _DemoCountdownState extends State<DemoCountdown> {
   Timer? timer;
   @override void initState(){super.initState();seconds=widget.minutes*60;
     timer=Timer.periodic(const Duration(seconds:1),(t){if(seconds>0&&mounted){
-      setState(()=>seconds--);}else t.cancel();});}
+      setState(()=>seconds--);}else{t.cancel();}});}
   @override void dispose(){timer?.cancel();super.dispose();}
   @override Widget build(BuildContext context)=>TgBadge(
     '${(seconds ~/ 60).toString().padLeft(2,'0')}:${(seconds % 60).toString().padLeft(2,'0')}',

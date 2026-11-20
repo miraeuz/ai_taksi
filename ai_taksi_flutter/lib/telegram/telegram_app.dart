@@ -5,7 +5,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'tg_theme.dart';
 import 'tg_widgets.dart';
 import 'demo_state.dart';
-import 'mock_data.dart';
 import 'rider_pages.dart';
 import 'driver_pages.dart';
 import 'more_pages.dart';

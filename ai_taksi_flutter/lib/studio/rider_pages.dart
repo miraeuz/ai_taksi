@@ -224,7 +224,7 @@ class _RiderSchedulePageState extends ConsumerState<RiderSchedulePage> {
         const SizedBox(height: 22),
         const Text('Safar yo‘nalishi', style: TextStyle(fontWeight: FontWeight.w900)),
         const SizedBox(height: 9),
-        DropdownButtonFormField<String>(value: direction, isExpanded: true,
+        DropdownButtonFormField<String>(initialValue: direction, isExpanded: true,
           decoration: const InputDecoration(prefixIcon: Icon(Icons.swap_horiz, color: emerald)),
           items: const [DropdownMenuItem(value: 'Kosonsoy → NamSU',
             child: Text('Kosonsoy → NamSU')),
@@ -234,7 +234,7 @@ class _RiderSchedulePageState extends ConsumerState<RiderSchedulePage> {
         const SizedBox(height: 20),
         const Text('Olib ketish bekati', style: TextStyle(fontWeight: FontWeight.w900)),
         const SizedBox(height: 9),
-        DropdownButtonFormField<String>(value: pickup, isExpanded: true,
+        DropdownButtonFormField<String>(initialValue: pickup, isExpanded: true,
           decoration: const InputDecoration(prefixIcon: Icon(Icons.place_outlined, color: emerald)),
           items: pilotStops.map((stop) => DropdownMenuItem(value: stop, child: Text(stop))).toList(),
           onChanged: (v) { if (v != null) setState(() => pickup = v); }),
@@ -247,8 +247,10 @@ class _RiderSchedulePageState extends ConsumerState<RiderSchedulePage> {
             final picked = await showTimePicker(context: context,
               initialTime: TimeOfDay(hour: int.parse(parts[0]), minute: int.parse(parts[1])),
               helpText: 'Yetib borish vaqti');
-            if (picked != null) setState(() => arrival =
-              '${picked.hour.toString().padLeft(2,'0')}:${picked.minute.toString().padLeft(2,'0')}');
+            if (picked != null) {
+              setState(() => arrival =
+                '${picked.hour.toString().padLeft(2,'0')}:${picked.minute.toString().padLeft(2,'0')}');
+            }
           }, child: Padding(padding: const EdgeInsets.all(16), child: Row(children: [
             const Icon(Icons.schedule, color: emerald), const SizedBox(width: 11),
             Expanded(child: Text('$arrival gacha',
