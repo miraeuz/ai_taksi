@@ -191,7 +191,9 @@ class StudioController extends StateNotifier<StudioState> {
   void selectVehicle(String id) {
     final match = demoVehicles.where((v) => v.id == id);
     if (match.isNotEmpty && match.first.seats >= state.groupSize &&
-        match.first.kind == state.requiredKind) state = state.copyWith(selectedVehicle: id);
+        match.first.kind == state.requiredKind) {
+      state = state.copyWith(selectedVehicle: id);
+    }
   }
   void toggleFavorite(String id) {
     if (!demoVehicles.any((v) => v.id == id)) return;

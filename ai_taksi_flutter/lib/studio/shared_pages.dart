@@ -151,8 +151,12 @@ class _StudioChatPageState extends ConsumerState<StudioChatPage> {
   @override void dispose() { messageController.dispose(); super.dispose(); }
   void send() {
     final result = ref.read(studioProvider.notifier).sendMessage(messageController.text);
-    if (result == null) { messageController.clear(); FocusScope.of(context).unfocus(); }
-    else demoSnack(context, result);
+    if (result == null) {
+      messageController.clear();
+      FocusScope.of(context).unfocus();
+    } else {
+      demoSnack(context, result);
+    }
   }
   @override Widget build(BuildContext context) {
     final state = ref.watch(studioProvider);

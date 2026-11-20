@@ -89,7 +89,7 @@ class _EarningsBars extends StatelessWidget {
   @override Widget build(BuildContext context) => SizedBox(height: 71,
     child: Row(crossAxisAlignment: CrossAxisAlignment.end,
       children: List.generate(7, (i) {
-        final heights = [25.0,44,33,58,48,68,39];
+        final heights = <double>[25, 44, 33, 58, 48, 68, 39];
         return Expanded(child: Column(mainAxisAlignment: MainAxisAlignment.end,
           children: [Container(height: heights[i], margin: const EdgeInsets.symmetric(horizontal: 5),
             decoration: BoxDecoration(color: i == 5 ? auroraCyan : const Color(0xFF805DDE),

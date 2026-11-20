@@ -57,6 +57,7 @@ class DemoState {
 
 class DemoController extends StateNotifier<DemoState> {
   DemoController() : super(const DemoState());
+  @override
   DemoState get debugState => state;
   void switchRole(DemoRole role) => state = state.copyWith(role: role, activeTab: 0);
   void tab(int index) => state = state.copyWith(activeTab: index);
